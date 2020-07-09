@@ -6,6 +6,14 @@
 
 #films {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    margin: 20px;
+}
+
+.film {
+    margin: 10px;
+}
+
+.film__title {
+    font-family: 'Coustard', serif;
+    font-size: medium;
 }

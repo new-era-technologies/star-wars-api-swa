@@ -27,10 +27,27 @@ function fetchStWarsApi(url) {
 fetchStWarsApi(mainUrl + filmsUrl);
 
 
-//draw list of films
+//get list of films
 
 function addFilms(obj) {
     obj.results.forEach(el => {
-        console.log(el);
+        drawListOfFilms(el);
+        console.log(el)
     });
+}
+
+
+//draw list of films
+
+function drawListOfFilms(el) {
+    const item = document.createElement('div');
+    item.classList.add('film');
+    filmsCont.appendChild(item);
+    const link = document.createElement('a');
+    link.setAttribute('href', './film/film.html#' + el.url.substring(el.url.length - 1, el.url.length - 2));
+    item.appendChild(link);
+    const title = document.createElement('p');
+    title.classList.add('film__title');
+    title.innerHTML = el.title + ' - ' + el.release_date.substring(0,4);
+    link.appendChild(title);
 }
