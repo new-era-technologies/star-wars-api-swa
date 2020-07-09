@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Nunito', serif;
+    font-size: medium;
 }
 
 #films {
@@ -11,9 +13,4 @@
 
 .film {
     margin: 10px;
-}
-
-.film__title {
-    font-family: 'Coustard', serif;
-    font-size: medium;
 }
