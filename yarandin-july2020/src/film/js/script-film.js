@@ -67,13 +67,3 @@ function addFilmInfo(obj) {
                .then((response) => vehicles.innerHTML += response.name + ', ');
         });
 }
-
-
-
-
-const srchInp = document.getElementById('srch');
-srchInp.addEventListener('keyup', function(e) {
-    fetch('https://swapi.dev/api/people/?search=' + e.target.value)
-            .then((response) => response.json())
-            .then((response) => console.log(response.results));
-});

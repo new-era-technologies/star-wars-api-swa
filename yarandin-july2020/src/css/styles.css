@@ -6,11 +6,16 @@
     font-size: medium;
 }
 
-#films {
+#films,
+form {
     width: 100%;
     margin: 20px;
 }
 
 .film {
     margin: 10px;
+}
+
+#srch_field {
+    margin: 10px 30px;
 }

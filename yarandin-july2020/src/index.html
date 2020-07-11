@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <div id="films">
         films:
     </div>
+    <div>
+        <form>
+            <input id="films_srch" class="radio_buts" type="radio" name="srch" checked value="films">
+            <label for="films_srch">films</label>
+            <input id="people_srch" class="radio_buts" type="radio" name="srch" value="people">
+            <label for="people_srch">people</label>
+            <input id="starships_srch" class="radio_buts" type="radio" name="srch" value="starships">
+            <label for="starships_srch">starships</label>
+            <input id="species_srch" class="radio_buts" type="radio" name="srch" value="species">
+            <label for="species_srch">species</label>
+            <input id="planets_srch" class="radio_buts" type="radio" name="srch" value="planets">
+            <label for="planets_srch">planets</label>
+            <input id="vehicles_srch" class="radio_buts" type="radio" name="srch" value="vehicles">
+            <label for="vehicles_srch">vehicles</label>
+            <input id="srch" type="search">
+        </form>
+        <div id="srch_field"></div>
+    </div>
     <script src="js/script.js"></script>
+    <script src="js/search.js"></script>
 </body>
+
 </html>
