@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Nunito', serif;
+    font-family: "Nunito", serif;
     font-size: medium;
 }
 
@@ -12,4 +12,19 @@
 
 .film__info {
     margin: 10px;
+}
+
+.sort {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#content {
+    display: none;
+}
+
+.sort_el {
+    margin: 10px;
+    cursor: pointer;
 }

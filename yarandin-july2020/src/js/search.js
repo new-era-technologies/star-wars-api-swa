@@ -31,7 +31,9 @@ srchInp.addEventListener('keyup', function (e) {
 // fetch when clicking radio buts
 for (let i = 0; i < radButs.length; i++) {
     radButs[i].addEventListener('click', function (e) {
-        fetchSrch(e.target.value, srchInp.value);
+        if (srchInp.value.length) {
+            fetchSrch(e.target.value, srchInp.value);
+        }
     })
 }
 
